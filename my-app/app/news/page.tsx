@@ -17,21 +17,20 @@ export default function NewsPage() {
           }}
         >
           <h1
+            className="font-serif pt-4"
             style={{
               fontSize: "clamp(4rem, 10vw, 6rem)",
-              fontFamily: "Georgia, Times New Roman, serif",
               fontWeight: "normal",
-              marginBottom: "30px",
             }}
           >
             News
           </h1>
-
           <p
+             className="font-sans"
             style={{
               fontSize: "18px",
-              maxWidth: "600px",
               margin: "0 auto 60px",
+              maxWidth: "600px",
               opacity: "0.8",
             }}
           >
@@ -49,12 +48,12 @@ export default function NewsPage() {
             }}
           >
             <button
+              className="font-sans hover:bg-gray-500 transition-colors"
               style={{
                 padding: "10px 25px",
                 border: "1px solid rgba(255, 255, 255, 0.3)",
                 borderRadius: "30px",
                 backgroundColor: "transparent",
-                color: "white",
                 fontSize: "16px",
                 cursor: "pointer",
               }}
