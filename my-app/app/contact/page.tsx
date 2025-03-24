@@ -30,7 +30,7 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen pt-[4rem] bg-[#0f172a] text-white flex flex-col">
+    <div className="min-h-screen pt-[4rem] bg-[#101728] text-white flex flex-col">
       <Navbar />
 
       <main className="flex-1 flex flex-col">

@@ -3,7 +3,7 @@ import Footer from "@/components/footer"
 
 export default function SecurityPage() {
   return (
-    <div style={{ backgroundColor: "#111827", color: "white", minHeight: "100vh" }}>
+    <div style={{ backgroundColor: "#101728", color: "white", minHeight: "100vh" }}>
       <Navbar />
 
       <main>
