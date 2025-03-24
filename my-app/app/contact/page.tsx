@@ -11,6 +11,8 @@ import { Calendar } from "@/components/ui/calendar"
 import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
 import { format } from "date-fns"
 import { cn } from "@/lib/utils"
+import { ToastContainer, toast } from 'react-toastify';
+
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -33,6 +35,20 @@ export default function ContactPage() {
     e.preventDefault()
     // Handle form submission logic here
     console.log(formData)
+    toast("Message Sent.", {
+      position: "bottom-right",
+      theme: "dark",
+      style: {
+        background: "#1e293b",
+        color: "#ffffff",
+        borderLeft: "4px solid #a855f7",
+        boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)"
+      },
+      progressStyle: {
+        background: "#1e293b"
+      },
+      icon: "🟣"
+    });
     // Reset form
     setFormData({ name: "", email: "", message: "", demoDate: undefined })
   }
@@ -214,6 +230,7 @@ export default function ContactPage() {
             </div>
           </div>
         </div>
+        <ToastContainer />
       </main>
     </div>
   )
