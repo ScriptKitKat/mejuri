@@ -1,19 +1,23 @@
 "use client"
 
 import type React from "react"
-
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { ArrowRight } from "lucide-react"
+import { ArrowRight, CalendarIcon } from "lucide-react"
 import Navbar from "@/components/navbar"
+import { Calendar } from "@/components/ui/calendar"
+import { Popover, PopoverContent, PopoverTrigger } from "@/components/ui/popover"
+import { format } from "date-fns"
+import { cn } from "@/lib/utils"
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
+    demoDate: undefined as Date | undefined,
   })
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -21,12 +25,16 @@ export default function ContactPage() {
     setFormData((prev) => ({ ...prev, [name]: value }))
   }
 
+  const handleDateSelect = (date: Date | undefined) => {
+    setFormData((prev) => ({ ...prev, demoDate: date }))
+  }
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     // Handle form submission logic here
     console.log(formData)
     // Reset form
-    setFormData({ name: "", email: "", message: "" })
+    setFormData({ name: "", email: "", message: "", demoDate: undefined })
   }
 
   return (
@@ -148,6 +156,37 @@ export default function ContactPage() {
                   </div>
 
                   <div>
+                    <label htmlFor="demoDate" className="block text-base font-medium mb-2">
+                      Preferred Demo Date
+                    </label>
+                    <Popover>
+                      <PopoverTrigger asChild>
+                        <Button
+                          id="demoDate"
+                          variant="outline"
+                          className={cn(
+                            "w-full justify-start text-left font-normal bg-[#6b7280] border-none text-white hover:bg-[#7c838f] hover:text-white",
+                            !formData.demoDate && "text-gray-300",
+                          )}
+                        >
+                          <CalendarIcon className="mr-2 h-4 w-4" />
+                          {formData.demoDate ? format(formData.demoDate, "PPP") : <span>Select a date</span>}
+                        </Button>
+                      </PopoverTrigger>
+                      <PopoverContent className="w-auto p-0 bg-[#1e293b] border-[#2d3748]">
+                        <Calendar
+                          mode="single"
+                          selected={formData.demoDate}
+                          onSelect={handleDateSelect}
+                          initialFocus
+                          className="bg-[#1e293b] text-white"
+                          disabled={(date) => date < new Date()}
+                        />
+                      </PopoverContent>
+                    </Popover>
+                  </div>
+
+                  <div>
                     <label htmlFor="message" className="block text-base font-medium mb-2">
                       Message
                     </label>
@@ -166,7 +205,7 @@ export default function ContactPage() {
 
                 <Button
                   type="submit"
-                  className="w-full bg-[#a855f7] hover:bg-[#9333ea] text-white h-14 text-lg font-medium"
+                  className="w-full bg-[#a855f7] hover:bg-[#9333ea] text-white h-14 text-lg font-medium mt-6"
                 >
                   <span>Send Message</span>
                   <ArrowRight className="ml-2 h-6 w-6" />
@@ -179,6 +218,4 @@ export default function ContactPage() {
     </div>
   )
 }
-
-
 
