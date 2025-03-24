@@ -44,10 +44,8 @@ export default function ContactPage() {
         borderLeft: "4px solid #a855f7",
         boxShadow: "0 4px 12px rgba(0, 0, 0, 0.15)"
       },
-      progressStyle: {
-        background: "#1e293b"
-      },
-      icon: "🟣"
+      progressClassName: "bg-[#1e293b]",
+      icon: <span role="img" aria-label="purple-circle">🟣</span>
     });
     // Reset form
     setFormData({ name: "", email: "", message: "", demoDate: undefined })
