@@ -89,7 +89,8 @@ const config: Config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       fontFamily: {
-        serif: ["Georgia", "Times New Roman", "serif"],
+        serif: ["MejuriFont","Georgia", "Times New Roman", "serif"],
+        sans: ["Helvetica Neue","-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Arial", "sans-serif"],
       },
     },
   },

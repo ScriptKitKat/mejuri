@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="bg-[#171717] text-white">
+    <footer className="bg-[#1b2743] text-white">
       {/* CTA Section */}
       <div className="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row justify-between items-start md:items-center">
         <h2 className="text-3xl md:text-4xl font-serif font-bold mb-6 md:mb-0">
