@@ -46,18 +46,7 @@ export default function SecurityPage() {
             MeJurix keeps your client data safe with world-class security and data privacy measures.
           </p>
 
-          <button
-            style={{
-              backgroundColor: "white",
-              color: "black",
-              padding: "12px 24px",
-              border: "none",
-              borderRadius: "4px",
-              fontSize: "16px",
-              fontWeight: "500",
-              cursor: "pointer",
-            }}
-          >
+          <button className="px-8 py-4 font-medium text-sm md:text-lg lg:text-xl font-sans rounded-full bg-gradient-to-r from-[#9340ff] to-[#ff3c5f] hover:from-purple-600 hover:to-pink-600 transition-all">
             Request a Demo
           </button>
         </section>
@@ -134,7 +123,7 @@ export default function SecurityPage() {
                   opacity: "0.8",
                 }}
               >
-                We've partnered with industry leaders NCC Group and BishopFox to rigorously test our web and network
+                We&apos;ve partnered with industry leaders NCC Group and BishopFox to rigorously test our web and network
                 defenses.
               </p>
             </div>
@@ -202,15 +191,19 @@ export default function SecurityPage() {
                   style={{
                     width: "60px",
                     height: "60px",
-                    backgroundColor: "#B146D7",
-                    borderRadius: "12px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 20px",
                   }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="48" // Increased width
+                    height="48" // Increased height
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                       stroke="white"
@@ -234,15 +227,19 @@ export default function SecurityPage() {
                   style={{
                     width: "60px",
                     height: "60px",
-                    backgroundColor: "#B146D7",
-                    borderRadius: "12px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 20px",
                   }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                       stroke="white"
@@ -271,15 +268,19 @@ export default function SecurityPage() {
                   style={{
                     width: "60px",
                     height: "60px",
-                    backgroundColor: "#B146D7",
-                    borderRadius: "12px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 20px",
                   }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
                       stroke="white"
@@ -308,15 +309,19 @@ export default function SecurityPage() {
                   style={{
                     width: "60px",
                     height: "60px",
-                    backgroundColor: "#B146D7",
-                    borderRadius: "12px",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 20px",
                   }}
                 >
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <path
                       d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
                       stroke="white"
@@ -370,23 +375,12 @@ export default function SecurityPage() {
               lineHeight: "1.6",
             }}
           >
-            Contact our team to learn more about our security measures and how we can help protect your sensitive
-            medical records.
+            Contact our team to learn more about our security measures and how we help protect your sensitive
+            medical records in our products.
           </p>
 
-          <button
-            style={{
-              backgroundColor: "white",
-              color: "black",
-              padding: "14px 30px",
-              border: "none",
-              borderRadius: "4px",
-              fontSize: "16px",
-              fontWeight: "500",
-              cursor: "pointer",
-            }}
-          >
-            Schedule a Security Review
+          <button className="px-8 py-4 font-medium text-sm md:text-lg lg:text-xl font-sans rounded-full bg-gradient-to-r from-[#9340ff] to-[#ff3c5f] hover:from-purple-600 hover:to-pink-600 transition-all">
+            Schedule a Demo
           </button>
         </section>
       </main>
