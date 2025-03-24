@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState, useEffect} from "react"
+import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
@@ -176,11 +177,11 @@ export default function Home() {
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
-                    <span className="heading-4 text-purple-400 font-medium mb-2 font-sans capitalize">Assistant</span>
+                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Assistant</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
-                      <h2 className="text-balance">Tailored to Your Expertise</h2>
-                      <p className="max-w-[300px]">Delegate complex tasks in natural language to your domain-specific personal assistant.</p>
-                      <button className="text-purple-400 flex items-center text-sm font-medium font-sans">
+                      <h2 className="text-balance text-[4vw]">Tailored to Your Expertise</h2>
+                      <p className="max-w-[75%] text-[1vw]">Delegate complex tasks in natural language to your domain-specific personal assistant.</p>
+                      <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
                         Explore Assistant
                         <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -194,19 +195,13 @@ export default function Home() {
               {/* Box 2 (Text First) */}
               <article className="flex w-full flex-col md:flex-row">
                 {/* Text Section */}
-                <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-l-xl">
-                  <div className="flex w-full flex-col gap-6 px-6 py-6 md:px-12">
-                    <span className="heading-4 text-purple-400 font-medium mb-2 font-sans capitalize text-lg md:text-xl lg:text-2xl">
-                      Assistant
-                    </span>
-                    <div className="flex flex-col gap-6 md:gap-8 lg:gap-10">
-                      <h2 className="text-balance text-2xl md:text-3xl lg:text-4xl font-bold leading-tight">
-                        Tailored to Your Expertise
-                      </h2>
-                      <p className="text-base md:text-lg lg:text-xl leading-relaxed">
-                        Delegate complex tasks in natural language to your domain-specific personal assistant.
-                      </p>
-                      <button className="text-purple-400 flex items-center text-base md:text-lg lg:text-xl font-medium font-sans">
+                <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
+                  <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
+                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Assistant</span>
+                    <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
+                      <h2 className="text-balance text-[4vw]">Tailored to Your Expertise</h2>
+                      <p className="max-w-[75%] text-[1vw]">Delegate complex tasks in natural language to your domain-specific personal assistant.</p>
+                      <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
                         Explore Assistant
                         <svg
                           className="ml-2 w-6 h-6"
