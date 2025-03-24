@@ -108,7 +108,7 @@ export default function Navbar() {
               >
                 <li className="group flex w-full items-center">
                   <Link
-                    href="#medical-report"
+                    href="/#medical-report"
                     className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 md:text-lg lg:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                     onClick={() => setIsProductsOpen(false)}
                   >
@@ -117,7 +117,7 @@ export default function Navbar() {
                 </li>
                 <li className="group flex w-full items-center">
                   <Link
-                    href="#assessment"
+                    href="/#assessment"
                     className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 md:text-lg lg:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                     onClick={() => setIsProductsOpen(false)}
                   >
@@ -160,7 +160,7 @@ export default function Navbar() {
           </nav>
 
           {/* Login Button - Desktop */}
-          <button className="ml-auto hidden md:flex items-center space-x-4 mr-6 px-4 py-2 rounded font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
+          <button className="ml-auto hidden md:flex items-center space-x-4 px-4 py-2 rounded font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
             Login
           </button>
 
