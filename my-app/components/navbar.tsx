@@ -140,7 +140,7 @@ export default function Navbar() {
               News
             </Link>
             <Link
-              href="#"
+              href="/company"
               className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
             >
               Company
