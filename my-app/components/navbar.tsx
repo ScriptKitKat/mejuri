@@ -66,17 +66,17 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`w-full px-4 py-6 flex fixed top-0 left-0 right-0 z-50 bg-gray-900 transition-all duration-500 ease-linear ${
-          isScrolled ? "shadow-lg" : "shadow-none"
-        } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+        className={`w-full px-4 py-6 flex fixed top-0 left-0 right-0 z-50 bg-gray-900 transition-all duration-500 ease-linear ${isScrolled ? "shadow-lg" : "shadow-none"
+          } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex max-w-[1920px] px-8 w-full lg:px-9 xl:px-10 items-center justify-between">
           <Link
             href="/"
-            className="flex items-center space-x-2"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+            className="inline-flex items-center space-x-2"
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            passHref={true}
           >
-            <div className="mr-2">
+            <div className="flex items-center">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
                 <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
@@ -103,9 +103,8 @@ export default function Navbar() {
 
               {/* Dropdown Menu */}
               <div
-                className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${
-                  isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
-                }`}
+                className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
+                  }`}
               >
                 <li className="group flex w-full items-center">
                   <Link
@@ -168,9 +167,8 @@ export default function Navbar() {
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-black z-50 flex flex-col transition-all duration-300 ease-in-out ${
-          isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-        }`}
+        className={`fixed inset-0 bg-black z-50 flex flex-col transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
       >
         <div className="flex justify-between items-center p-6">
           <span className="text-white text-2xl font-bold">MeJurix</span>
