@@ -42,7 +42,7 @@ export default function ContactPage() {
             <div>
               <h2 className="text-4xl font-bold mb-6">Reach Out to Mejurix</h2>
               <p className="text-gray-300 mb-8 text-lg">
-                Have questions or interested in collaborations? We'd love to hear from you.
+                Have questions or interested in collaborations? We&apos;d love to hear from you.
               </p>
             </div>
 
