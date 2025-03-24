@@ -35,22 +35,12 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Assistant
+                  Medical Report
                 </Link>
               </li>
               <li>
                 <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Vault
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Knowledge
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Workflows
+                  Assessment
                 </Link>
               </li>
             </ul>
