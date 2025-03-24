@@ -166,7 +166,7 @@ export default function Home() {
             <div className="flex flex-col gap-xl">
               
               {/* Box 1 */}
-              <article className="flex w-full flex-col md:flex-row">
+              <article id="medical-report" className="flex w-full flex-col md:flex-row">
                 {/* Video Section */}
                 <div className="relative aspect-square w-full overflow-hidden rounded-t md:flex-1 md:rounded-l-xl">
                   <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
@@ -193,7 +193,7 @@ export default function Home() {
               </article>
 
               {/* Box 2 (Text First) */}
-              <article className="flex w-full flex-col md:flex-row">
+              <article id="assessment" className="flex w-full flex-col md:flex-row">
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">

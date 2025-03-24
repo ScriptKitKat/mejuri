@@ -108,7 +108,7 @@ export default function Navbar() {
               >
                 <li className="group flex w-full items-center">
                   <Link
-                    href="#"
+                    href="#medical-report"
                     className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 md:text-lg lg:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                     onClick={() => setIsProductsOpen(false)}
                   >
@@ -117,7 +117,7 @@ export default function Navbar() {
                 </li>
                 <li className="group flex w-full items-center">
                   <Link
-                    href="#"
+                    href="#assessment"
                     className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 md:text-lg lg:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                     onClick={() => setIsProductsOpen(false)}
                   >
@@ -195,7 +195,7 @@ export default function Navbar() {
             {isProductsOpen && (
               <div className="mt-4 ml-4 space-y-4">
                 <Link
-                  href="#"
+                  href="#medical-report"
                   className="block text-white text-lg"
                   onClick={() => {
                     setIsProductsOpen(false)
@@ -205,7 +205,7 @@ export default function Navbar() {
                   Medical Report
                 </Link>
                 <Link
-                  href="#"
+                  href="#assessment"
                   className="block text-white text-lg"
                   onClick={() => {
                     setIsProductsOpen(false)
