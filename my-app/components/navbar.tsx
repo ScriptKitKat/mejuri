@@ -56,14 +56,22 @@ export default function Navbar() {
       } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
     >
       <div className="flex max-w-[1920px] px-8 w-full lg:px-9 xl:px-10 items-center justify-between">
-        <div className="mr-2">
-          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
-            <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
-          </svg>
-        </div>
-        <span className="text-4xl font-bold">MeJurix</span>
-
+        <Link
+        href="/"
+        className="flex items-center space-x-2"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <div className="mr-2">
+            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
+              <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
+            </svg>
+          </div>
+          <span className="text-4xl font-bold">MeJurix</span>
+        </Link>
+        
+        {/* Navbar Links */}
+        
         <nav className="hidden md:flex items-center space-x-8 mx-auto absolute inset-x-0 left-0 right-0 justify-center">
           <div
             className="relative"
