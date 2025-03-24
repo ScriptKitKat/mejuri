@@ -280,7 +280,7 @@ export default function CompanyPage() {
                 <h3
                   style={{
                     fontSize: "32px",
-                    fontFamily: "Georgia, Times New Roman, serif",
+                    fontFamily: "MejuriFont",
                     fontWeight: "normal",
                     marginBottom: "20px",
                     fontStyle: "italic",
@@ -290,6 +290,7 @@ export default function CompanyPage() {
                 </h3>
                 <p
                   style={{
+                    fontFamily: "MejuriFont",
                     fontSize: "16px",
                     lineHeight: "1.8",
                     opacity: "0.9",
