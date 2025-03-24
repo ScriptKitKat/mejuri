@@ -56,9 +56,10 @@ export default function NewsPage() {
                 backgroundColor: "transparent",
                 fontSize: "16px",
                 cursor: "pointer",
+                transition: "background-color 0.3s ease",
               }}
             >
-              All News
+                <span className="font-sans hover:text-gray-300 transition-colors">All News</span>
             </button>
             <button
               style={{
@@ -71,7 +72,7 @@ export default function NewsPage() {
                 cursor: "pointer",
               }}
             >
-              Press Releases
+              <span className="font-sans hover:text-gray-300 transition-colors">Press Releases</span>
             </button>
             <button
               style={{
@@ -84,7 +85,7 @@ export default function NewsPage() {
                 cursor: "pointer",
               }}
             >
-              Company Updates
+                <span className="font-sans hover:text-gray-300 transition-colors">Company Updates</span>
             </button>
           </div>
         </section>
