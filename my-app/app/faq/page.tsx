@@ -149,7 +149,7 @@ export default function FAQPage() {
               lineHeight: "1.6",
             }}
           >
-            Find answers to common questions about MeJurix's AI-powered medical records summarization platform.
+            Find answers to common questions about MeJurix&apos;s AI-powered medical records summarization platform.
           </p>
         </section>
 
