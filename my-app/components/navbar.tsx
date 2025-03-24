@@ -146,6 +146,12 @@ export default function Navbar() {
               Company
             </Link>
             <Link
+              href="/faq"
+              className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
+            >
+              FAQ
+            </Link>
+            <Link
               href="/contact"
               className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
             >
