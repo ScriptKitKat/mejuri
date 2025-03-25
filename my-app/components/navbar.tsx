@@ -126,13 +126,6 @@ export default function Navbar() {
                 </li>
               </div>
             </div>
-
-            <Link
-              href="/security"
-              className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
-            >
-              Security
-            </Link>
             <Link
               href="/news"
               className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
@@ -217,11 +210,6 @@ export default function Navbar() {
               </div>
             )}
           </div>
-
-          <Link href="/security" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-            Security
-          </Link>
-
           <Link href="/news" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
             News
           </Link>
@@ -239,7 +227,7 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        <div className="mt-auto p-6 grid grid-cols-1 gap-4">
+        <div className="p-6 grid grid-cols-1 gap-4">
           <button
             className="w-full py-4 bg-white text-black font-medium rounded-md text-center"
             onClick={() => setIsMobileMenuOpen(false)}
