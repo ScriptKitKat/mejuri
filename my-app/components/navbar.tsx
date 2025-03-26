@@ -240,7 +240,7 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        <div className="mt-auto p-6 grid grid-cols-1 gap-4">
+        <div className="p-6 grid grid-cols-1 gap-4">
           <Link
             href="/contact"
             className="w-full font-sans py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium rounded-md text-center"

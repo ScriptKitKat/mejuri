@@ -1,6 +1,7 @@
 "use client"
 
 import { useRef, useState, useEffect} from "react"
+import Link from "next/link"
 import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Navbar from "@/components/navbar"
@@ -75,9 +76,12 @@ export default function Home() {
             medical assessment, and insurance companies.
           </p>
 
-          <button className="px-8 py-4 font-medium text-sm md:text-lg lg:text-xl font-sans rounded-full bg-gradient-to-r from-[#9340ff] to-[#ff3c5f] hover:from-purple-600 hover:to-pink-600 transition-all">
-            Request a Demo
-          </button>
+          <Link
+            href="/contact">
+            <button className="px-8 py-4 font-medium text-sm md:text-lg lg:text-xl font-sans rounded-full bg-gradient-to-r from-[#9340ff] to-[#ff3c5f] hover:from-purple-600 hover:to-pink-600 transition-all">
+              Request a Demo
+            </button>
+          </Link>
 
         </section>
         {/* Video Section */}
