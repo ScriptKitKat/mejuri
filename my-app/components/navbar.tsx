@@ -9,22 +9,8 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
   const dropdownRef = useRef<HTMLDivElement>(null)
   const lastScrollY = useRef(0)
-
-  useEffect(() => {
-    function handleResize() {
-      if (window.innerWidth >= 1000) {
-        setIsMobileMenuOpen(false) // Close mobile menu if screen size is larger than 768px
-      }
-    }
-
-    window.addEventListener("resize", handleResize)
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [])
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -80,27 +66,30 @@ export default function Navbar() {
   return (
     <>
       <header
-        className={`w-full px-4 py-6 flex fixed top-0 left-0 right-0 z-50 bg-gray-900 transition-all duration-500 ease-linear ${isScrolled ? "shadow-lg" : "shadow-none"
-          } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
+        className={`w-full px-4 py-6 flex fixed top-0 left-0 right-0 z-50 bg-gray-900 transition-all duration-500 ease-linear ${
+          isScrolled ? "shadow-lg" : "shadow-none"
+        } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
         <div className="flex max-w-[1920px] px-8 w-full lg:px-9 xl:px-10 items-center justify-between">
-            <Link
+          <Link
             href="/"
             className="inline-flex items-center space-x-2 cursor-pointer z-1000"
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             passHref={true}
-            >
+          >
             <div className="flex items-center">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
-              <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
+                <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
+                <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
               </svg>
             </div>
             <span className="text-4xl font-bold">MeJurix</span>
-            </Link>
+          </Link>
+
+          {/* Demo Request Button - Desktop */}
 
           {/* Navbar Links - Desktop */}
-            <nav className="hidden md:flex items-center space-x-8 mx-auto justify-center w-full">
+          <nav className="hidden xl:flex items-center space-x-8 mx-auto justify-center w-full">
             <div
               className="relative"
               ref={dropdownRef}
@@ -108,7 +97,7 @@ export default function Navbar() {
               onMouseLeave={() => setIsProductsOpen(false)}
             >
               <button
-                className="flex font-medium text-sm font-sans md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out items-center hover:text-gray-500"
+                className="flex font-medium text-sm font-sans xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out items-center hover:text-gray-500"
                 onClick={() => setIsProductsOpen(!isProductsOpen)}
               >
                 Products
@@ -117,13 +106,14 @@ export default function Navbar() {
 
               {/* Dropdown Menu */}
               <div
-                className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
-                  }`}
+                className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${
+                  isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
+                }`}
               >
                 <li className="group flex w-full items-center">
                   <Link
-                    href="/#medical-report"
-                    className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 md:text-lg lg:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
+                    href="#"
+                    className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                     onClick={() => setIsProductsOpen(false)}
                   >
                     Medical Report
@@ -131,8 +121,8 @@ export default function Navbar() {
                 </li>
                 <li className="group flex w-full items-center">
                   <Link
-                    href="/#assessment"
-                    className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 md:text-lg lg:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
+                    href="#"
+                    className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                     onClick={() => setIsProductsOpen(false)}
                   >
                     Assessment
@@ -142,59 +132,58 @@ export default function Navbar() {
             </div>
             <Link
               href="/news"
-              className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
+              className="font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
             >
               News
             </Link>
             <Link
               href="/company"
-              className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
+              className="font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
             >
               Company
             </Link>
             <Link
-              href="/faq"
-              className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
-            >
-              FAQ
-            </Link>
-            <Link
               href="/contact"
-              className="font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
+              className="font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
             >
               Contact
             </Link>
           </nav>
 
-            <div
-            className={`p-6 grid grid-cols-1 gap-4 bottom-8 right-8 transition-opacity duration-300 ease-in-out ${
-              isScrolled ? "opacity-100 visible" : "opacity-0 invisible"
-            }`}
-            >
-            <button
-              className="py-4 px-8 bg-gradient-to-r from-[#9340ff] to-[#ff3c5f] text-white font-sans rounded-full font-medium text-center shadow-lg"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              Request a Demo
-            </button>
-            </div>
-
+          <Link
+            href="/contact"
+            className="font-sans hidden xl:inline-block mx-auto bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium py-3 px-4 rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
+          >
+            Request a Demo
+          </Link>
           {/* Login Button - Desktop */}
-          <button className="ml-auto hidden md:flex items-center space-x-4 px-4 py-2 rounded font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
+          <button className="ml-auto hidden xl:flex items-center space-x-4 mr-6 px-4 py-2 rounded font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
             Login
           </button>
 
-          {/* Mobile Menu Button */}
-          <button className="md:hidden ml-auto" onClick={() => setIsMobileMenuOpen(true)}>
-            <Menu className="h-8 w-8 text-white" />
-          </button>
+          {/* Mobile Controls - Right Aligned */}
+          <div className="xl:hidden flex items-center ml-auto">
+            {/* Demo Request Button - Mobile */}
+            <Link
+              href="/contact"
+              className="font-sans bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium py-2 px-4 rounded-full text-sm hover:opacity-90 transition-opacity whitespace-nowrap mr-4"
+            >
+              Request a Demo
+            </Link>
+
+            {/* Mobile Menu Button */}
+            <button onClick={() => setIsMobileMenuOpen(true)}>
+              <Menu className="h-8 w-8 text-white" />
+            </button>
+          </div>
         </div>
       </header>
 
       {/* Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 bg-black z-50 flex flex-col transition-all duration-300 ease-in-out ${isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
+        className={`fixed inset-0 bg-black z-50 flex flex-col transition-all duration-300 ease-in-out ${
+          isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+        }`}
       >
         <div className="flex justify-between items-center p-6">
           <span className="text-white text-2xl font-bold">MeJurix</span>
@@ -215,7 +204,7 @@ export default function Navbar() {
             {isProductsOpen && (
               <div className="mt-4 ml-4 space-y-4">
                 <Link
-                  href="#medical-report"
+                  href="#"
                   className="block text-white text-lg"
                   onClick={() => {
                     setIsProductsOpen(false)
@@ -225,7 +214,7 @@ export default function Navbar() {
                   Medical Report
                 </Link>
                 <Link
-                  href="#assessment"
+                  href="#"
                   className="block text-white text-lg"
                   onClick={() => {
                     setIsProductsOpen(false)
@@ -237,16 +226,13 @@ export default function Navbar() {
               </div>
             )}
           </div>
+
           <Link href="/news" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
             News
           </Link>
 
-          <Link href="/company" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="#" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
             Company
-          </Link>
-
-          <Link href="/faq" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-            FAQ
           </Link>
 
           <Link href="/contact" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
@@ -254,9 +240,17 @@ export default function Navbar() {
           </Link>
         </nav>
 
-        <div className="p-6 grid grid-cols-1 gap-4">
+        <div className="mt-auto p-6 grid grid-cols-1 gap-4">
+          <Link
+            href="/contact"
+            className="w-full font-sans py-4 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium rounded-md text-center"
+            onClick={() => setIsMobileMenuOpen(false)}
+          >
+            Request a Demo
+          </Link>
+
           <button
-            className="w-full py-4 bg-white text-black font-medium rounded-md text-center"
+            className="font-sans w-full py-4 bg-white text-black font-medium rounded-md text-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Login
