@@ -9,8 +9,22 @@ export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isVisible, setIsVisible] = useState(true)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
   const dropdownRef = useRef<HTMLDivElement>(null)
   const lastScrollY = useRef(0)
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth >= 1000) {
+        setIsMobileMenuOpen(false) // Close mobile menu if screen size is larger than 768px
+      }
+    }
+
+    window.addEventListener("resize", handleResize)
+    return () => {
+      window.removeEventListener("resize", handleResize)
+    }
+  }, [])
 
   // Close dropdown when clicking outside
   useEffect(() => {
@@ -151,6 +165,19 @@ export default function Navbar() {
               Contact
             </Link>
           </nav>
+
+            <div
+            className={`p-6 grid grid-cols-1 gap-4 bottom-8 right-8 transition-opacity duration-300 ease-in-out ${
+              isScrolled ? "opacity-100 visible" : "opacity-0 invisible"
+            }`}
+            >
+            <button
+              className="py-4 px-8 bg-gradient-to-r from-[#9340ff] to-[#ff3c5f] text-white font-sans rounded-full font-medium text-center shadow-lg"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Request a Demo
+            </button>
+            </div>
 
           {/* Login Button - Desktop */}
           <button className="ml-auto hidden md:flex items-center space-x-4 px-4 py-2 rounded font-medium text-sm md:text-lg lg:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
