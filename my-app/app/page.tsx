@@ -186,7 +186,7 @@ export default function Home() {
                       <h2 className="text-balance text-[4vw]">Tailored to Your Expertise</h2>
                       <p className="max-w-[75%] text-[1vw]">Delegate complex tasks in natural language to your domain-specific personal assistant.</p>
                       <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
-                        Explore Assistant
+                        Explore Medical Report
                         <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                         </svg>

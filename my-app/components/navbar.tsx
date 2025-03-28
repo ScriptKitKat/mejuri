@@ -231,7 +231,7 @@ export default function Navbar() {
             Security
           </Link>
 
-          <Link href="#" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+          <Link href="/company" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
             Company
           </Link>
 
