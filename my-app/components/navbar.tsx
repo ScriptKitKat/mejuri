@@ -131,10 +131,10 @@ export default function Navbar() {
               </div>
             </div>
             <Link
-              href="/news"
+              href="/security"
               className="font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans"
             >
-              News
+              Security
             </Link>
             <Link
               href="/company"
@@ -227,8 +227,8 @@ export default function Navbar() {
             )}
           </div>
 
-          <Link href="/news" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
-            News
+          <Link href="/security" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+            Security
           </Link>
 
           <Link href="#" className="text-white text-xl font-medium" onClick={() => setIsMobileMenuOpen(false)}>
