@@ -83,13 +83,13 @@ export default function Navbar() {
                 <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
               </svg>
             </div>
-            <span className="text-4xl font-bold">MeJurix</span>
+            <span className="text-4xl font-bold">Medicalsummary.ai</span>
           </Link>
 
           {/* Demo Request Button - Desktop */}
 
           {/* Navbar Links - Desktop */}
-          <nav className="hidden xl:flex items-center space-x-8 mx-auto justify-center w-full">
+            <nav className="hidden xl:flex items-center space-x-8 justify-center absolute left-1/2 transform -translate-x-1/2 w-max">
             <div
               className="relative"
               ref={dropdownRef}
@@ -97,37 +97,37 @@ export default function Navbar() {
               onMouseLeave={() => setIsProductsOpen(false)}
             >
               <button
-                className="flex font-medium text-sm font-sans xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out items-center hover:text-gray-500"
-                onClick={() => setIsProductsOpen(!isProductsOpen)}
+              className="flex font-medium text-sm font-sans xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out items-center hover:text-gray-500"
+              onClick={() => setIsProductsOpen(!isProductsOpen)}
               >
-                Products
-                <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isProductsOpen ? "rotate-180" : ""}`} />
+              Products
+              <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isProductsOpen ? "rotate-180" : ""}`} />
               </button>
 
               {/* Dropdown Menu */}
               <div
-                className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${
-                  isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
-                }`}
+              className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${
+                isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
+              }`}
               >
-                <li className="group flex w-full items-center">
-                  <Link
-                    href="#"
-                    className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
-                    onClick={() => setIsProductsOpen(false)}
-                  >
-                    Medical Report
-                  </Link>
-                </li>
-                <li className="group flex w-full items-center">
-                  <Link
-                    href="#"
-                    className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
-                    onClick={() => setIsProductsOpen(false)}
-                  >
-                    Assessment
-                  </Link>
-                </li>
+              <li className="group flex w-full items-center">
+                <Link
+                href="#"
+                className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
+                onClick={() => setIsProductsOpen(false)}
+                >
+                Medical Report
+                </Link>
+              </li>
+              <li className="group flex w-full items-center">
+                <Link
+                href="#"
+                className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
+                onClick={() => setIsProductsOpen(false)}
+                >
+                Assessment
+                </Link>
+              </li>
               </div>
             </div>
             <Link
@@ -148,18 +148,20 @@ export default function Navbar() {
             >
               Contact
             </Link>
-          </nav>
+            </nav>
 
-          <Link
+            <div className="absolute right-6 hidden xl:flex items-center space-x-4">
+            <Link
             href="/contact"
-            className="font-sans hidden xl:inline-block mx-auto bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium py-3 px-4 rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
-          >
+            className="font-sans bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium py-3 px-4 rounded-full hover:opacity-90 transition-opacity whitespace-nowrap"
+            >
             Request a Demo
-          </Link>
-          {/* Login Button - Desktop */}
-          <button className="ml-auto hidden xl:flex items-center space-x-4 mr-6 px-4 py-2 rounded font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
+            </Link>
+            <button className="px-4 py-2 rounded font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
             Login
-          </button>
+            </button>
+            </div>
+
 
           {/* Mobile Controls - Right Aligned */}
           <div className="xl:hidden flex items-center ml-auto">
@@ -186,7 +188,7 @@ export default function Navbar() {
         }`}
       >
         <div className="flex justify-between items-center p-6">
-          <span className="text-white text-2xl font-bold">MeJurix</span>
+          <span className="text-white text-2xl font-bold">Medicalsummary.ai</span>
           <button onClick={() => setIsMobileMenuOpen(false)} className="text-white">
             <X className="h-6 w-6" />
           </button>

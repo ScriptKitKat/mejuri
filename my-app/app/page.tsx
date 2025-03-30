@@ -99,7 +99,7 @@ export default function Home() {
                 {/* Video Element*/}
                 <video ref={videoRef} className="w-full h-full object-cover">
                   <source
-                    src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
+                    src="https://synthesia-ttv-data.s3-eu-west-1.amazonaws.com/video_data/f2d5a18c-311c-41c9-be04-33b1971c43ea/versions/5/transfers/rendered_video.mp4"
                     type="video/mp4"
                   />
                   Your browser does not support the video tag.
