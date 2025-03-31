@@ -146,7 +146,7 @@ export default function PrivacyPolicyPage() {
                   <strong>Log Data:</strong> When you use our website or platform, our systems automatically record
                   information such as your Internet Protocol (IP) address, browser type, operating system, device
                   identifiers, the pages or features you accessed, the dates/times of access, and other usage details.
-                  This data (called "log data") helps us administer the Services and understand how they are being used.
+                  This data (called &quot;log data&quot;) helps us administer the Services and understand how they are being used.
                 </li>
 
                 <li style={{ marginBottom: "12px" }}>
@@ -634,9 +634,9 @@ export default function PrivacyPolicyPage() {
               We also do not share your Personal Data with third parties for their independent marketing purposes.
               However, we want to be transparent that we do use cookies and third-party analytics/advertising services
               that may collect information about your visits to our site to show you Mejurix ads on other websites. Some
-              state laws (like California&apos;s CCPA) define this type of sharing as a "sale" or "sharing" of personal
+              state laws (like California&apos;s CCPA) define this type of sharing as a &quot;sale&quot; or &quot;sharing&quot; of personal
               information, even if no money is exchanged. In those cases, you have the right to opt out of such sharing.
-              We provide mechanisms to do so (for example, a "Do Not Sell or Share My Personal Information" link on our
+              We provide mechanisms to do so (for example, a &quot;Do Not Sell or Share My Personal Information&quot; link on our
               website, if required). We also confirm that we do not knowingly sell or share personal information of
               minors under 18 years of age.
             </li>
