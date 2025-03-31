@@ -40,7 +40,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Assessment
+                  Medical Q & A
                 </Link>
               </li>
             </ul>
@@ -55,23 +55,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
+                <Link href="/security" className="hover:text-gray-300 transition-colors">
                   Security
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
+                <Link href="/company" className="hover:text-gray-300 transition-colors">
                   Company
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  News
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Careers
                 </Link>
               </li>
             </ul>
@@ -81,23 +71,13 @@ export default function Footer() {
             <h3 className="text-gray-400 font-medium mb-6">Resources</h3>
             <ul className="space-y-4">
               <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Legal
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
+                <Link href="/privacy-policy" className="hover:text-gray-300 transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
+                <Link href="/press-kit" className="hover:text-gray-300 transition-colors">
                   Press Kit
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  Your Privacy Choices
                 </Link>
               </li>
             </ul>
@@ -109,11 +89,6 @@ export default function Footer() {
               <li>
                 <Link href="#" className="hover:text-gray-300 transition-colors">
                   LinkedIn
-                </Link>
-              </li>
-              <li>
-                <Link href="#" className="hover:text-gray-300 transition-colors">
-                  X
                 </Link>
               </li>
             </ul>

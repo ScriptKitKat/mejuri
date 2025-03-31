@@ -160,10 +160,11 @@ export default function Home() {
         <section className="py-24 px-4 md:px-8 bg-[#111827]">
           <div className="max-w-6xl mx-auto text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-serif mb-6">
-              Augment All of Your Work on
-              <br />
-              One Integrated, Secure Platform
+              Streamline Your Medical-Legal Workflow
             </h2>
+            <p className="text-lg md:text-xl text-gray-300">
+              Our AI assistant simplifies the most complex and time-consuming <br/>parts of medical record analysis for legal cases.
+            </p>
           </div>
 
           <div className="max-w-[1728px] mx-auto col-span-2 md:col-span-6 lg:col-start-2 lg:col-end-12 xl:col-start-2 xl:col-span-10">
@@ -181,10 +182,17 @@ export default function Home() {
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
-                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Assistant</span>
+                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Report</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
-                      <h2 className="text-balance text-[4vw]">Tailored to Your Expertise</h2>
-                      <p className="max-w-[75%] text-[1vw]">Delegate complex tasks in natural language to your domain-specific personal assistant.</p>
+                      <h2 className="text-balance text-[4vw]">Instant Medical Summaries</h2>
+                      <p className="max-w-[75%] text-[1vw]">All medical information structured into a concise summary relevant to your case:</p>
+                      <ul className="list-disc pl-5 text-[1vw]">
+                        <li>Patient background and accident details</li>
+                        <li>Pre-existing and post-accident conditions</li>
+                        <li>Medication history with page references</li>
+                        <li>Chronological organization of key events</li>
+                      </ul>
+                      <p className="max-w-[75%] text-[1vw]">Every piece of information includes page references that link directly to the source documents.</p>
                       <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
                         Explore Medical Report
                         <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -201,12 +209,19 @@ export default function Home() {
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
-                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Assistant</span>
+                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Q&A</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
-                      <h2 className="text-balance text-[4vw]">Tailored to Your Expertise</h2>
-                      <p className="max-w-[75%] text-[1vw]">Delegate complex tasks in natural language to your domain-specific personal assistant.</p>
+                      <h2 className="text-balance text-[4vw]">Gain Conversational Insights</h2>
+                      <p className="max-w-[75%] text-[1vw]">Engage naturally with medical records to extract key information with precision and efficiency.</p>
+                      <ul className="list-disc pl-5 text-[1vw]">
+                        <li>Ask direct questions about patient history and diagnoses</li>
+                        <li>Receive accurate, evidence-based answers with source references</li>
+                        <li>Follow suggested questions for deeper exploration</li>
+                        <li>Generate customized reports for legal and medical documentation</li>
+                      </ul>
+                      <p className="max-w-[75%] text-[1vw]">This feature helps medical assessors draft legal documents, assists lawyers in communicating with clients, and supports the creation of court documents requiring medical summaries.</p>
                       <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
-                        Explore Assistant
+                        Explore Medical Q&A
                         <svg
                           className="ml-2 w-6 h-6"
                           viewBox="0 0 24 24"

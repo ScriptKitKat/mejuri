@@ -74,20 +74,147 @@ export default function CompanyPage() {
             textAlign: "center",
           }}
         >
-          <h2
+            <h2
             style={{
               fontSize: "clamp(2rem, 5vw, 3rem)",
               fontFamily: "Georgia, Times New Roman, serif",
               fontWeight: "normal",
               marginBottom: "80px",
             }}
-          >
+            >
             Combining Legal
             <br />
             and AI Expertise
-          </h2>
+            </h2>
 
-          <div
+            <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "50px",
+              maxWidth: "900px",
+              margin: "0 auto",
+              marginBottom: "80px", // Add vertical space between rows
+            }}
+            >
+            {/* Leader 1 */}
+            <div>
+              <div
+              style={{
+                width: "200px",
+                height: "200px",
+                backgroundColor: "#1a1a1a",
+                borderRadius: "8px",
+                margin: "0 auto 20px",
+              }}
+              ></div>
+              <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>Jong Ko</h3>
+              <p style={{ fontSize: "16px", opacity: "0.8", marginBottom: "15px" }}>CEO & Co-Founder</p>
+              <p style={{ fontSize: "14px", opacity: "0.7", marginBottom: "15px" }}>
+              Former, CEO of Happysona Ai Accelerator<br />
+              Former, CEO of FOBIKR Inc.
+              </p>
+              <div style={{ display: "flex", justifyContent: "center", gap: "15px" }}>
+              <a href="https://www.linkedin.com/in/jongko/" target="_blank" rel="noopener noreferrer">
+                <div
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M6 9H2V21H6V9Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                </svg>
+                </div>
+              </a>
+              </div>
+            </div>
+
+            {/* Leader 2 */}
+            <div>
+              <div
+              style={{
+                width: "200px",
+                height: "200px",
+                backgroundColor: "#1a1a1a",
+                borderRadius: "8px",
+                margin: "0 auto 20px",
+              }}
+              ></div>
+              <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>Ilho Ye</h3>
+              <p style={{ fontSize: "16px", opacity: "0.8", marginBottom: "15px" }}>CTO & Co-Founder</p>
+              <p style={{ fontSize: "14px", opacity: "0.7", marginBottom: "15px" }}>
+              Former Engineering Manager at Twitter <br /> Former Software Development Engineer at Microsoft
+              </p>
+
+              <div style={{ display: "flex", justifyContent: "center", gap: "15px" }}>
+              <a href="https://www.linkedin.com/in/ilho-ye-95478a32/" target="_blank" rel="noopener noreferrer">
+                <div
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                >
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M6 9H2V21H6V9Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                </svg>
+                </div>
+              </a>
+              </div>
+            </div>
+            </div>
+
+            <div
             style={{
               display: "grid",
               gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
@@ -95,153 +222,123 @@ export default function CompanyPage() {
               maxWidth: "900px",
               margin: "0 auto",
             }}
-          >
-            {/* Leader 1 */}
+            >
+            {/* Leader 3 */}
             <div>
               <div
-                style={{
-                  width: "200px",
-                  height: "200px",
-                  backgroundColor: "#1a1a1a",
-                  borderRadius: "8px",
-                  margin: "0 auto 20px",
-                }}
+              style={{
+                width: "200px",
+                height: "200px",
+                backgroundColor: "#1a1a1a",
+                borderRadius: "8px",
+                margin: "0 auto 20px",
+              }}
               ></div>
-              <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>Sarah Parker</h3>
-              <p style={{ fontSize: "16px", opacity: "0.8", marginBottom: "15px" }}>CEO & Co-Founder</p>
+              <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>Jae Cho</h3>
+              <p style={{ fontSize: "16px", opacity: "0.8", marginBottom: "15px" }}>CLO & Co-Founder</p>
               <p style={{ fontSize: "14px", opacity: "0.7", marginBottom: "15px" }}>
-                Former Director at HealthTech Solutions
+              Lawyer and Personal Injury Law Expert
               </p>
+
               <div style={{ display: "flex", justifyContent: "center", gap: "15px" }}>
+              <a href="https://www.linkedin.com/in/jae-cho-08152015/" target="_blank" rel="noopener noreferrer">
                 <div
-                  style={{
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "50%",
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M6 9H2V21H6V9Z"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M6 9H2V21H6V9Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                </svg>
                 </div>
-                <div
-                  style={{
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "50%",
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M23 3C22.1 3.35 21.1 3.58 20.1 3.69C21.2 3.08 22 2.13 22.5 1C21.5 1.5 20.4 1.9 19.3 2.1C18.4 1.15 17.1 0.5 15.7 0.5C13.1 0.5 11 2.6 11 5.2C11 5.6 11 6 11.1 6.3C7.3 6.1 3.9 4.2 1.5 1.3C1.1 2 0.8 2.8 0.8 3.6C0.8 5.1 1.5 6.5 2.7 7.3C2 7.3 1.3 7.1 0.8 6.7C0.8 6.7 0.8 6.7 0.8 6.8C0.8 9.1 2.4 11 4.5 11.4C4.1 11.5 3.7 11.6 3.3 11.6C3 11.6 2.7 11.6 2.4 11.5C3 13.4 4.7 14.7 6.8 14.8C5.2 16 3.2 16.7 1 16.7C0.7 16.7 0.3 16.7 0 16.6C2.1 17.9 4.5 18.7 7.2 18.7C15.7 18.7 20.4 11.7 20.4 5.8C20.4 5.6 20.4 5.3 20.4 5.1C21.4 4.4 22.3 3.5 23 2.6C23 3 23 3 23 3Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
+              </a>
               </div>
             </div>
 
-            {/* Leader 2 */}
+            {/* Leader 4 */}
             <div>
               <div
-                style={{
-                  width: "200px",
-                  height: "200px",
-                  backgroundColor: "#1a1a1a",
-                  borderRadius: "8px",
-                  margin: "0 auto 20px",
-                }}
+              style={{
+                width: "200px",
+                height: "200px",
+                backgroundColor: "#1a1a1a",
+                borderRadius: "8px",
+                margin: "0 auto 20px",
+              }}
               ></div>
-              <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>James Lee</h3>
-              <p style={{ fontSize: "16px", opacity: "0.8", marginBottom: "15px" }}>CTO & Co-Founder</p>
-              <p style={{ fontSize: "14px", opacity: "0.7", marginBottom: "15px" }}>Former AI Lead at MedTech</p>
+              <h3 style={{ fontSize: "24px", marginBottom: "5px" }}>Charles Hong</h3>
+              <p style={{ fontSize: "16px", opacity: "0.8", marginBottom: "15px" }}>CFO & Co-Founder</p>
+              <p style={{ fontSize: "14px", opacity: "0.7", marginBottom: "15px" }}>
+              Former Senior Economist at S & P Global Market Intelligence
+              </p>
               <div style={{ display: "flex", justifyContent: "center", gap: "15px" }}>
+              <a href="https://www.linkedin.com/in/charles-hongcw/" target="_blank" rel="noopener noreferrer">
                 <div
-                  style={{
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "50%",
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
+                style={{
+                  width: "30px",
+                  height: "30px",
+                  borderRadius: "50%",
+                  backgroundColor: "rgba(255, 255, 255, 0.1)",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M6 9H2V21H6V9Z"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                    <path
-                      d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
-                      stroke="white"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                  d="M16 8C17.5913 8 19.1174 8.63214 20.2426 9.75736C21.3679 10.8826 22 12.4087 22 14V21H18V14C18 13.4696 17.7893 12.9609 17.4142 12.5858C17.0391 12.2107 16.5304 12 16 12C15.4696 12 14.9609 12.2107 14.5858 12.5858C14.2107 12.9609 14 13.4696 14 14V21H10V14C10 12.4087 10.6321 10.8826 11.7574 9.75736C12.8826 8.63214 14.4087 8 16 8Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M6 9H2V21H6V9Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                  <path
+                  d="M4 6C5.10457 6 6 5.10457 6 4C6 2.89543 5.10457 2 4 2C2.89543 2 2 2.89543 2 4C2 5.10457 2.89543 6 4 6Z"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  />
+                </svg>
                 </div>
-                <div
-                  style={{
-                    width: "30px",
-                    height: "30px",
-                    borderRadius: "50%",
-                    backgroundColor: "rgba(255, 255, 255, 0.1)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M23 3C22.1 3.35 21.1 3.58 20.1 3.69C21.2 3.08 22 2.13 22.5 1C21.5 1.5 20.4 1.9 19.3 2.1C18.4 1.15 17.1 0.5 15.7 0.5C13.1 0.5 11 2.6 11 5.2C11 5.6 11 6 11.1 6.3C7.3 6.1 3.9 4.2 1.5 1.3C1.1 2 0.8 2.8 0.8 3.6C0.8 5.1 1.5 6.5 2.7 7.3C2 7.3 1.3 7.1 0.8 6.7C0.8 6.7 0.8 6.7 0.8 6.8C0.8 9.1 2.4 11 4.5 11.4C4.1 11.5 3.7 11.6 3.3 11.6C3 11.6 2.7 11.6 2.4 11.5C3 13.4 4.7 14.7 6.8 14.8C5.2 16 3.2 16.7 1 16.7C0.7 16.7 0.3 16.7 0 16.6C2.1 17.9 4.5 18.7 7.2 18.7C15.7 18.7 20.4 11.7 20.4 5.8C20.4 5.6 20.4 5.3 20.4 5.1C21.4 4.4 22.3 3.5 23 2.6C23 3 23 3 23 3Z"
-                      fill="white"
-                    />
-                  </svg>
-                </div>
+              </a>
               </div>
             </div>
           </div>
         </section>
-
         {/* Vision & Mission Section - Similar to the colorful image but in black and white style */}
         <section
           style={{

@@ -125,7 +125,7 @@ export default function Navbar() {
                 className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                 onClick={() => setIsProductsOpen(false)}
                 >
-                Assessment
+                Medical Q & A
                 </Link>
               </li>
               </div>
@@ -223,7 +223,7 @@ export default function Navbar() {
                     setIsMobileMenuOpen(false)
                   }}
                 >
-                  Assessment
+                  Medical Q & A
                 </Link>
               </div>
             )}
