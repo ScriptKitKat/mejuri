@@ -104,7 +104,7 @@ export default function PressKitPage() {
                 Extended Litigation
               </h3>
               <p style={{ fontSize: "16px", lineHeight: "1.6", opacity: "0.9" }}>
-                In personal injury and class action lawsuits, each client's medical records can exceed{" "}
+                In personal injury and class action lawsuits, each client&apos;s medical records can exceed{" "}
                 <span style={{ fontWeight: "bold" }}>500-1000 pages</span>, requiring weeks or even months for review.
               </p>
             </div>
