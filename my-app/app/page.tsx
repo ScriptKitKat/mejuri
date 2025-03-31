@@ -6,6 +6,9 @@ import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import med1 from './images/med1.jpg';
+import med2 from './images/med2.png';
+
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -174,9 +177,7 @@ export default function Home() {
               <article id="medical-report" className="flex w-full flex-col md:flex-row">
                 {/* Video Section */}
                 <div className="relative aspect-square w-full overflow-hidden rounded-t md:flex-1 md:rounded-l-xl">
-                  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
-                  </video>
+                  <img src={med1.src} alt="Medical Report" className="absolute inset-0 w-full h-full object-cover" />
                 </div>
 
                 {/* Text Section */}
@@ -243,9 +244,10 @@ export default function Home() {
 
                 {/* Video Section */}
                 <div className="relative aspect-square w-full overflow-hidden rounded-b md:flex-1 md:rounded-none md:rounded-r-xl">
-                  <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
+                  <img src={med2.src} alt="Medical Report" className="absolute inset-0 w-full h-full object-cover" />
+                  {/* <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
                     <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
-                  </video>
+                  </video> */}
                 </div>
               </article>
 
