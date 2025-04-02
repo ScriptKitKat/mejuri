@@ -9,6 +9,7 @@ import Footer from "@/components/footer"
 import med1 from './images/med1.jpg';
 import med2 from './images/med2.png';
 import medthumb from './images/med-thumbnail.png';
+// import videodemo from './public/videos/medicalsummary.mp4';
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -105,10 +106,7 @@ export default function Home() {
                   className="w-full h-full object-cover"
                   poster={medthumb.src} // Adding the video thumbnail
                 >
-                  <source
-                  src="https://synthesia-ttv-data.s3-eu-west-1.amazonaws.com/video_data/f2d5a18c-311c-41c9-be04-33b1971c43ea/versions/5/transfers/rendered_video.mp4"
-                  type="video/mp4"
-                  />
+                   <source src="/videos/medicalsummary.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>
 
