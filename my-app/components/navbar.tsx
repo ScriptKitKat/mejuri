@@ -157,9 +157,15 @@ export default function Navbar() {
             >
             Request a Demo
             </Link>
-            <button className="px-4 py-2 rounded font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
-            Login
+
+            <Link
+            href="https://mejurix.com/login/"
+            >
+              <button className="px-4 py-2 rounded font-medium text-sm xl:text-lg 2xl:text-xl text-gray-50-ivory transition-colors duration-300 ease-out hover:text-gray-500 font-sans">
+              Login
             </button>
+            </Link>
+            
             </div>
 
 
@@ -251,12 +257,17 @@ export default function Navbar() {
             Request a Demo
           </Link>
 
-          <button
+          <Link
+            href="https://mejurix.com/login/"
+            >
+              <button
             className="font-sans w-full py-4 bg-white text-black font-medium rounded-md text-center"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Login
           </button>
+          </Link>
+          
         </div>
       </div>
     </>
