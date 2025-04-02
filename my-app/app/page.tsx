@@ -9,7 +9,6 @@ import Footer from "@/components/footer"
 import med1 from './images/med1.jpg';
 import med2 from './images/med2.png';
 import medthumb from './images/med-thumbnail.png';
-// import videodemo from './public/videos/medicalsummary.mp4';
 
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);

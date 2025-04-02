@@ -72,18 +72,25 @@ export default function Navbar() {
       >
         <div className="flex max-w-[1920px] px-8 w-full lg:px-9 xl:px-10 items-center justify-between">
           <Link
-            href="/"
-            className="inline-flex items-center space-x-2 cursor-pointer z-1000"
-            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-            passHref={true}
+        href="/"
+        className="inline-flex items-center space-x-2 cursor-pointer z-1000"
+        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        passHref={true}
           >
-            <div className="flex items-center">
-              <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
-                <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
-              </svg>
-            </div>
-            <span className="text-4xl font-bold">Medicalsummary.ai</span>
+        <div className="flex items-center">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 40 40"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="w-8 h-8 sm:w-10 sm:h-10"
+          >
+            <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
+            <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
+          </svg>
+        </div>
+        <span className="text-2xl font-bold sm:text-4xl">Medicalsummary.ai</span>
           </Link>
 
           {/* Demo Request Button - Desktop */}
