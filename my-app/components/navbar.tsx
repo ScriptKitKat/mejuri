@@ -112,7 +112,7 @@ export default function Navbar() {
               >
               <li className="group flex w-full items-center">
                 <Link
-                href="#"
+                href="https://mejurix.com/upload/"
                 className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                 onClick={() => setIsProductsOpen(false)}
                 >
@@ -121,7 +121,7 @@ export default function Navbar() {
               </li>
               <li className="group flex w-full items-center">
                 <Link
-                href="#"
+                href="https://mejurix.com/medicalqa/"
                 className="font-sans transition-colors duration-300 ease-out text-center px-4 py-3 xl:text-lg 2xl:text-xl bg-transparent text-gray-50-ivory hover:text-gray-400 leading-[130%] flex w-full items-center gap-2"
                 onClick={() => setIsProductsOpen(false)}
                 >
@@ -212,7 +212,7 @@ export default function Navbar() {
             {isProductsOpen && (
               <div className="mt-4 ml-4 space-y-4">
                 <Link
-                  href="#"
+                  href="https://mejurix.com/upload/"
                   className="block text-white text-lg"
                   onClick={() => {
                     setIsProductsOpen(false)
@@ -222,7 +222,7 @@ export default function Navbar() {
                   Medical Report
                 </Link>
                 <Link
-                  href="#"
+                  href="https://mejurix.com/medicalqa/"
                   className="block text-white text-lg"
                   onClick={() => {
                     setIsProductsOpen(false)
