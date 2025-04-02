@@ -106,7 +106,7 @@ export default function Navbar() {
 
               {/* Dropdown Menu */}
               <div
-              className={`absolute top-[4rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${
+              className={`absolute top-[3rem] z-[1] bg-[#1b2743] mx-auto flex w-max flex-col items-center justify-center gap-2 rounded p-4 origin-top transition-all duration-300 ease-in-out before:absolute before:inset-x-0 before:top-[-32px] before:mx-auto before:h-8 before:w-full before:content-[''] ${
                 isProductsOpen ? "opacity-100 scale-100 block" : "opacity-0 scale-95 hidden"
               }`}
               >
