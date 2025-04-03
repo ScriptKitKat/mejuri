@@ -90,7 +90,8 @@ export default function Navbar() {
             <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
           </svg>
         </div>
-        <span className="text-2xl font-bold sm:text-4xl">Medicalsummary.ai</span>
+        
+        <span className="text-xl font-bold sm:text-2xl md:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
           </Link>
 
           {/* Demo Request Button - Desktop */}
@@ -173,7 +174,7 @@ export default function Navbar() {
             </button>
             </Link>
             
-            </div>
+          </div>
 
 
           {/* Mobile Controls - Right Aligned */}
@@ -181,7 +182,7 @@ export default function Navbar() {
             {/* Demo Request Button - Mobile */}
             <Link
               href="/contact"
-              className="font-sans bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium py-2 px-4 rounded-full text-sm hover:opacity-90 transition-opacity whitespace-nowrap mr-4"
+              className="font-sans bg-gradient-to-r from-purple-500 to-pink-500 text-white font-medium py-2 px-2 rounded-full text-sm hover:opacity-90 transition-opacity whitespace-nowrap mr-4"
             >
               Request a Demo
             </Link>

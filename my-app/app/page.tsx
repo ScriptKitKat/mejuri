@@ -214,7 +214,7 @@ export default function Home() {
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
-                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Report</span>
+                    <span className="heading-4 text-purple-400 text-[1.5vw] md:text-base font-medium mb-2 font-sans capitalize">Medical Report</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
                       <h2 className="text-balance text-[4vw] text-bold">Instant Medical Summaries</h2>
                       <p className="max-w-[75%] text-base md:text-lg">All medical information structured into a concise summary relevant to your case:</p>
@@ -241,7 +241,7 @@ export default function Home() {
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
-                    <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Q&A</span>
+                    <span className="heading-4 text-purple-400 text-[1.5vw] md:text-base font-medium mb-2 font-sans capitalize">Medical Q&A</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
                       <h2 className="text-balance text-[4vw] text-bold">Gain Conversational Insights</h2>
                       <p className="max-w-[75%] text-base md:text-lg">Engage naturally with medical records to extract key information with precision and efficiency.</p>
