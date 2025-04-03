@@ -91,7 +91,7 @@ export default function Navbar() {
           </svg>
         </div>
         
-        <span className="text-xl font-bold sm:text-2xl md:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
+        <span className="text-xl font-bold sm:text-lg md:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
           </Link>
 
           {/* Demo Request Button - Desktop */}
