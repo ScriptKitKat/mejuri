@@ -89,11 +89,11 @@ export default function Home() {
             Medical Records Summarization
           </h1>
 
-          <p className="font-sans text-lg md:text-xl max-w-2xl mb-12">
+            <p className="font-sans text-lg md:text-xl max-w-2xl mb-12">
             AI medical summaries for personal injury law firms,
-            <br />
+            {isMobile ? " " : <br />} 
             medical assessment, and insurance companies.
-          </p>
+            </p>
 
           <Link
             href="/contact">
@@ -216,7 +216,7 @@ export default function Home() {
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
                     <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Report</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
-                      <h2 className="text-balance text-[4vw]">Instant Medical Summaries</h2>
+                      <h2 className="text-balance text-[4vw] text-bold">Instant Medical Summaries</h2>
                       <p className="max-w-[75%] text-base md:text-lg">All medical information structured into a concise summary relevant to your case:</p>
                       <ul className="list-disc pl-5 text-base md:text-lg">
                         <li>Patient background and accident details</li>
@@ -243,7 +243,7 @@ export default function Home() {
                   <div className="flex w-full flex-col gap-4 px-6 py-6 md:px-12">
                     <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Q&A</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
-                      <h2 className="text-balance text-[4vw]">Gain Conversational Insights</h2>
+                      <h2 className="text-balance text-[4vw] text-bold">Gain Conversational Insights</h2>
                       <p className="max-w-[75%] text-base md:text-lg">Engage naturally with medical records to extract key information with precision and efficiency.</p>
                       <ul className="list-disc pl-5 text-base md:text-md">
                         <li>Ask direct questions about patient history and diagnoses</li>
