@@ -8,6 +8,22 @@ const config: Config = {
     "*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      sm: '640px',  // Small devices (phones)
+      md: '768px',  // Medium devices (tablets)
+      lg: '1024px', // Large devices (laptops)
+      xl: '1280px', // Extra large devices (desktops)
+    },
+    container: {
+      center: true,
+      padding: "1rem",
+      screens: {
+        sm: "100%",
+        md: "100%",
+        lg: "100%",
+        xl: "100%",
+      },
+    },
     extend: {
       colors: {
         background: "#111827",
