@@ -83,7 +83,7 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <section className="container mx-auto px-4 flex flex-col items-center justify-center text-center min-h-screen">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl mb-8">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl mt-1 mb-8">
             Revolutionizing
             <br />
             Medical Records Summarization
