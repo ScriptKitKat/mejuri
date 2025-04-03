@@ -1,7 +1,6 @@
 "use client"
 
 import { useRef, useState, useEffect } from "react"
-import { isMobile } from "react-device-detect"
 import Link from "next/link"
 import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
@@ -11,10 +10,15 @@ import med1 from './images/med1.jpg';
 import med2 from './images/med2.png';
 import medthumb from './images/med-thumbnail.png';
 
+
+
 export default function Home() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [progress, setProgress] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  
 
   const { scrollYProgress } = useScroll({
     target: videoRef,
@@ -34,6 +38,17 @@ export default function Home() {
     }
   };
 
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+  
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -97,7 +112,8 @@ export default function Home() {
                 opacity,
                 borderRadius,
               }}
-              className={`${isMobile ? "w-[20%] h-[20%]" : "w-[80%] h-[100%]"} overflow-hidden bg-black`}
+
+              className={`${isMobile ? "w-full h-auto" : "w-[80%] h-[100%]"} overflow-hidden bg-black`}
             >
                 <div className="relative w-full h-full">
                 {/* Video Element */}
@@ -177,7 +193,7 @@ export default function Home() {
         {/* Platform Features Section */}
         <section className="py-24 px-4 md:px-8 bg-[#111827]">
           <div className="max-w-6xl mx-auto text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-serif mb-6">
+            <h2 className="text-3xl md:text-5xl font-serif mb-6">
               Streamline Your Medical-Legal Workflow
             </h2>
             <p className="text-lg md:text-xl text-gray-300">
@@ -201,15 +217,15 @@ export default function Home() {
                     <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Report</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
                       <h2 className="text-balance text-[4vw]">Instant Medical Summaries</h2>
-                      <p className="max-w-[75%] text-[1vw]">All medical information structured into a concise summary relevant to your case:</p>
-                      <ul className="list-disc pl-5 text-[1vw]">
+                      <p className="max-w-[75%] text-base md:text-lg">All medical information structured into a concise summary relevant to your case:</p>
+                      <ul className="list-disc pl-5 text-base md:text-lg">
                         <li>Patient background and accident details</li>
                         <li>Pre-existing and post-accident conditions</li>
                         <li>Medication history with page references</li>
                         <li>Chronological organization of key events</li>
                       </ul>
-                      <p className="max-w-[75%] text-[1vw]">Every piece of information includes page references that link directly to the source documents.</p>
-                      <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
+                      <p className="max-w-[75%] text-base md:text-lg">Every piece of information includes page references that link directly to the source documents.</p>
+                      <button className="text-purple-400 flex items-center text-base font-medium font-sans">
                         Explore Medical Report
                         <svg className="ml-2 w-4 h-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                           <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
@@ -228,15 +244,15 @@ export default function Home() {
                     <span className="heading-4 text-purple-400 text-[1.5vw] font-medium mb-2 font-sans capitalize">Medical Q&A</span>
                     <div className="flex flex-col gap-4 md:gap-6 lg:gap-8">
                       <h2 className="text-balance text-[4vw]">Gain Conversational Insights</h2>
-                      <p className="max-w-[75%] text-[1vw]">Engage naturally with medical records to extract key information with precision and efficiency.</p>
-                      <ul className="list-disc pl-5 text-[1vw]">
+                      <p className="max-w-[75%] text-base md:text-lg">Engage naturally with medical records to extract key information with precision and efficiency.</p>
+                      <ul className="list-disc pl-5 text-base md:text-md">
                         <li>Ask direct questions about patient history and diagnoses</li>
                         <li>Receive accurate, evidence-based answers with source references</li>
                         <li>Follow suggested questions for deeper exploration</li>
                         <li>Generate customized reports for legal and medical documentation</li>
                       </ul>
-                      <p className="max-w-[75%] text-[1vw]">This feature helps medical assessors draft legal documents, assists lawyers in communicating with clients, and supports the creation of court documents requiring medical summaries.</p>
-                      <button className="text-purple-400 flex items-center text-[1vw] font-medium font-sans">
+                      <p className="max-w-[75%] text-base">This feature helps medical assessors draft legal documents, assists lawyers in communicating with clients, and supports the creation of court documents requiring medical summaries.</p>
+                      <button className="text-purple-400 flex items-center text-base font-medium font-sans">
                         Explore Medical Q&A
                         <svg
                           className="ml-2 w-6 h-6"
