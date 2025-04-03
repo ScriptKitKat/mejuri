@@ -70,10 +70,10 @@ export default function Navbar() {
           isScrolled ? "shadow-lg" : "shadow-none"
         } ${isVisible ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <div className="flex max-w-[1920px] px-8 w-full lg:px-9 xl:px-10 items-center justify-between">
+        <div className="flex max-w-[1920px] w-full lg:px-9 xl:px-10 items-center justify-between">
           <Link
         href="/"
-        className="inline-flex items-center space-x-2 cursor-pointer z-1000"
+        className="inline-flex items-center xl:space-x-2 md:space-x-0 cursor-pointer z-1000"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         passHref={true}
           >
@@ -91,7 +91,7 @@ export default function Navbar() {
           </svg>
         </div>
         
-        <span className="text-xl font-bold sm:text-lg md:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
+        <span className="text-xl px-1 font-bold sm:text-mg md:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
           </Link>
 
           {/* Demo Request Button - Desktop */}
