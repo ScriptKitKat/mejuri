@@ -78,20 +78,20 @@ export default function Navbar() {
         passHref={true}
           >
         <div className="flex items-center">
-          <svg
+            <svg
             width="32"
             height="32"
             viewBox="0 0 40 40"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-8 h-8 sm:w-10 sm:h-10"
-          >
+            className="w-5 h-5 lg:w-8 lg:h-8"
+            >
             <path d="M20 0L37.3205 10V30L20 40L2.67949 30V10L20 0Z" fill="#B146D7" />
             <path d="M20 8L30.6603 14V26L20 32L9.33975 26V14L20 8Z" fill="#111827" />
-          </svg>
+            </svg>
         </div>
         
-        <span className="text-xl px-1 font-bold sm:text-mg md:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
+        <span className="px-1 font-bold sm:text-mg lg:text-3xl whitespace-nowrap">Medicalsummary.ai</span>
           </Link>
 
           {/* Demo Request Button - Desktop */}
