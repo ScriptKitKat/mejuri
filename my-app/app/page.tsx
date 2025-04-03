@@ -1,6 +1,7 @@
 "use client"
 
-import { useRef, useState, useEffect} from "react"
+import { useRef, useState, useEffect } from "react"
+import { isMobile } from "react-device-detect"
 import Link from "next/link"
 import React from "react"
 import { motion, useScroll, useTransform } from "framer-motion"
@@ -96,7 +97,7 @@ export default function Home() {
                 opacity,
                 borderRadius,
               }}
-              className="w-[100%] h-[100%] md:w-[80%] md:h-[100%] overflow-hidden bg-black"
+              className={`${isMobile ? "w-[20%] h-[20%]" : "w-[80%] h-[100%]"} overflow-hidden bg-black`}
             >
                 <div className="relative w-full h-full">
                 {/* Video Element */}
