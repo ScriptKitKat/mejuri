@@ -7,7 +7,7 @@ export default function CompanyPage() {
       <Navbar />
 
       <main>
-        {/* Hero Section - Similar to the black and white image */}
+        {/* Hero Section*/}
         <section
           style={{
             padding: "120px 20px 80px",
@@ -94,7 +94,7 @@ export default function CompanyPage() {
               gap: "50px",
               maxWidth: "900px",
               margin: "0 auto",
-              marginBottom: "80px", // Add vertical space between rows
+              marginBottom: "80px", 
             }}
             >
             {/* Leader 1 */}
@@ -272,7 +272,7 @@ export default function CompanyPage() {
             </div>
           </div>
         </section>
-        {/* Vision & Mission Section - Similar to the colorful image but in black and white style */}
+        {/* Vision & Mission Section */}
         <section
           style={{
             padding: "80px 20px",

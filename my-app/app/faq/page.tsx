@@ -92,10 +92,8 @@ const faqData = {
 }
 
 export default function FAQPage() {
-  // State for active category
   const [activeCategory, setActiveCategory] = useState("general")
 
-  // State for expanded questions
   const [expandedQuestions, setExpandedQuestions] = useState<Record<string, boolean>>({})
 
   // Toggle question expansion

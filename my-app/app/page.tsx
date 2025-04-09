@@ -40,7 +40,7 @@ export default function Home() {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth <= 768); // Adjust breakpoint as needed
+      setIsMobile(window.innerWidth <= 768); // mobile breakpoint
     };
 
     checkMobile();
@@ -120,7 +120,7 @@ export default function Home() {
                 <video
                   ref={videoRef}
                   className="w-full h-full object-cover"
-                  poster={medthumb.src} // Adding the video thumbnail
+                  poster={medthumb.src}
                 >
                    <source src="/videos/medicalsummary.mp4" type="video/mp4" />
                   Your browser does not support the video tag.
@@ -236,7 +236,7 @@ export default function Home() {
                 </div>
               </article>
 
-              {/* Box 2 (Text First) */}
+              {/* Box 2 */}
               <article id="assessment" className="flex w-full flex-col md:flex-row">
                 {/* Text Section */}
                 <div className="flex w-full flex-col items-center justify-center bg-[#1b2743] p-6 md:flex-1 min-h-[400px] md:rounded-r-xl">
@@ -276,16 +276,11 @@ export default function Home() {
                 {/* Video Section */}
                 <div className="relative aspect-square w-full overflow-hidden rounded-b md:flex-1 md:rounded-none md:rounded-r-xl">
                   <img src={med2.src} alt="Medical Report" className="absolute inset-0 w-full h-full object-cover" />
-                  {/* <video className="absolute inset-0 w-full h-full object-cover" autoPlay muted loop playsInline>
-                    <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4" />
-                  </video> */}
                 </div>
               </article>
 
             </div>
-          </div>
-
-          
+          </div> 
         </section>
       </main>
       <Footer />
